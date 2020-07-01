@@ -216,6 +216,7 @@ button:focus, button:active:focus, button.active:focus,
 	background: #FFF;
 	border-radius: 5px;
 	padding: 30px;
+	min-height:300px;
 	/*margin-bottom: 20px;*/
 }
 
@@ -727,6 +728,10 @@ button:focus, button:active:focus, button.active:focus,
 	border-radius:50%;
 }
 
+.skill-item .section-box{
+	
+	min-height: 360px !importain;
+}
 
 /*-----  End of Skills Section Styles  ------*/
 
