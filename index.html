@@ -418,45 +418,41 @@
                 <!-- /.education-items -->
             </div>
             <!-- /.education-container -->
+            
+            <!-- facebook -->
+            <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="109153910864001"
+  logged_in_greeting="I'm Tiêu, fullstack web developer ( laravel, vuejs, react js, python ... ).."
+  logged_out_greeting="I'm Tiêu, fullstack web developer ( laravel, vuejs, react js, python ... )..">
+      </div>
+            
+            
         </div>
         <!-- /.container -->
     </section>
     <script defer="defer" async="async" src="dist/dist.js"></script>
         <script src="assets/js/funny.js"></script>
-            <!-- Facebook chat  -->
-    <script>
-  var div = document.createElement('div');
-  div.className = 'fb-customerchat';
-  div.setAttribute('page_id', '109153910864001');
-  div.setAttribute('ref', '');
-  document.body.appendChild(div);
-  window.fbMessengerPlugins = window.fbMessengerPlugins || {
-    init: function () {
-      FB.init({
-        appId            : '1678638095724206',
-        autoLogAppEvents : true,
-        xfbml            : true,
-        version          : 'v3.3'
-      });
-    }, callable: []
-  };
-  window.fbAsyncInit = window.fbAsyncInit || function () {
-    window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
-    window.fbMessengerPlugins.init();
-  };
-  setTimeout(function () {
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) { return; }
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  }, 0);
-</script>
-   <!-- Facebook chat  -->
-
+ 
 
 </body>
 
