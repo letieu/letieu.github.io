@@ -26,7 +26,31 @@
 
 <body class="homepage ver-one" data-spy="scroll" data-target=".main-navigation">
     
-    
+    <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="109153910864001"
+  logged_in_greeting="I'm Tiêu, fullstack web developer ( laravel, vuejs, react js, python ... ).."
+  logged_out_greeting="I'm Tiêu, fullstack web developer ( laravel, vuejs, react js, python ... )..">
+      </div>
+            
     <header id="site-header">
         <nav id="site-navigation" class="main-navigation side-static" role="navigation">
             <div class="navigation-header">
@@ -419,35 +443,7 @@
             </div>
             <!-- /.education-container -->
             
-            <!-- facebook -->
-            <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v7.0'
-          });
-        };
-
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
-
-      <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution=setup_tool
-        page_id="109153910864001"
-  logged_in_greeting="I'm Tiêu, fullstack web developer ( laravel, vuejs, react js, python ... ).."
-  logged_out_greeting="I'm Tiêu, fullstack web developer ( laravel, vuejs, react js, python ... )..">
-      </div>
-            
-            
-        </div>
+         </div>
         <!-- /.container -->
     </section>
     <script defer="defer" async="async" src="dist/dist.js"></script>
